@@ -17,7 +17,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body style="background-color: rgba(56, 56, 56, 0.77)">
@@ -74,40 +74,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="index.js"></script> -->
-    <script>
-      let tg = {
-        token: "6866127779:AAG0vQHDIjHGP5FE3CsO6hfDQsu2Nuahh7o",
-        chat_id: "@formTestMessages",
-      };
-
-      function sendMessage(text) {
-        const url = `https://api.telegram.org/bot${tg.token}/sendMessage`;
-
-        const obj = {
-          chat_id: tg.chat_id,
-          text: text,
-        };
-
-        const xht = new XMLHttpRequest();
-        xht.open("POST", url, true);
-        xht.setRequestHeader("Content-type", "application/json; charset=UTF-8");
-        xht.send(JSON.stringify(obj));
-      }
-
-      const email = document.getElementById("email");
-      const phone = document.getElementById("phone");
-      const comments = document.getElementById("comments");
-      const form = document.querySelector(".form");
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        sendMessage(
-          `email: ${email.value}\nnumber: ${phone.value}\ncomment: ${comments.value}\n`
-        );
-
-        alert("Глянь в чат");
-        form.reset();
-      });
-    </script>
+    <script src="/index.js"></script>
   </body>
 </html>
