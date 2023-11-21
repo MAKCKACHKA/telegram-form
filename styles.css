@@ -1,0 +1,21 @@
+.page {
+  padding: 3.125rem;
+}
+.form {
+  max-width: 18.75rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.9375rem;
+}
+.form_input {
+  width: 100%;
+  padding: 0.625rem;
+  height: 2.5rem;
+}
+textarea.form_input {
+  height: 6.25rem;
+}
+.form_button {
+  background-color: #0e5da7;
+  color: aliceblue;
+}

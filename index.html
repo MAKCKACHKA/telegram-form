@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для телеграм бота</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body style="background-color: rgba(56, 56, 56, 0.77)">
+    <main
+      class="container"
+      style="width: 400px; align-items: center; justify-content: center"
+    >
+      <h1 style="text-align: center; margin-top: 50px; color: aliceblue">
+        Перейди по наступному посиланню =>
+        <a href="https://t.me/formTestMessages"> Нажми сюди</a>
+      </h1>
+      <form class="form shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="form-floating mb-3">
+          <input
+            id="email"
+            type="email"
+            class="form-control form-floating mb-3"
+            placeholder="name@example.com"
+            required
+          />
+          <label for="floatingInput">Електронна адреса</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            id="phone"
+            type="phone"
+            class="form-control"
+            placeholder="+38011111"
+            required
+          />
+          <label for="floatingInput">Номер телефону</label>
+        </div>
+        <div class="form-floating mb-5">
+          <textarea
+            required
+            id="comments"
+            class="form-control"
+            placeholder="Leave a comment here"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2">Коментар</label>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary p-2"
+          style="margin-left: auto; margin-right: auto"
+        >
+          Клацни
+        </button>
+      </form>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
